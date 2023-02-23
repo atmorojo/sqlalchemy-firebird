@@ -68,7 +68,7 @@ class FBDialect_fdb(FBDialect_kinterbasdb):
         )
 
     @classmethod
-    def dbapi(cls):
+    def import_dbapi(cls):
         return __import__("fdb")
 
     def create_connect_args(self, url):
